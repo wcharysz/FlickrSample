@@ -14,6 +14,8 @@
 		277F3A841B0097EC00D09444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F3A831B0097EC00D09444 /* Images.xcassets */; };
 		277F3A871B0097EC00D09444 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277F3A851B0097EC00D09444 /* LaunchScreen.xib */; };
 		277F3A931B0097EC00D09444 /* FlirckSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277F3A921B0097EC00D09444 /* FlirckSampleTests.m */; };
+		277F3AA61B00D25100D09444 /* FlickrServicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277F3AA51B00D25100D09444 /* FlickrServicesController.m */; };
+		9F20C2ACA67C3610F9482A32 /* libPods-FlirckSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E57664749134443570A537 /* libPods-FlirckSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +29,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15F5559A376F730857E27011 /* Pods-FlirckSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlirckSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlirckSample/Pods-FlirckSample.release.xcconfig"; sourceTree = "<group>"; };
 		277F3A731B0097EC00D09444 /* FlirckSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlirckSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F3A771B0097EC00D09444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F3A781B0097EC00D09444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		277F3A7A1B0097EC00D09444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		277F3A7B1B0097EC00D09444 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		277F3A7D1B0097EC00D09444 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		277F3A7E1B0097EC00D09444 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		277F3A7D1B0097EC00D09444 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		277F3A7E1B0097EC00D09444 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		277F3A811B0097EC00D09444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		277F3A831B0097EC00D09444 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		277F3A861B0097EC00D09444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		277F3A8C1B0097EC00D09444 /* FlirckSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlirckSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F3A911B0097EC00D09444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F3A921B0097EC00D09444 /* FlirckSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlirckSampleTests.m; sourceTree = "<group>"; };
+		277F3AA41B00D25100D09444 /* FlickrServicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrServicesController.h; sourceTree = "<group>"; };
+		277F3AA51B00D25100D09444 /* FlickrServicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrServicesController.m; sourceTree = "<group>"; };
+		D0E57664749134443570A537 /* libPods-FlirckSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlirckSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB919EF59E2C6EC7FF9D9C6F /* Pods-FlirckSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlirckSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlirckSample/Pods-FlirckSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F20C2ACA67C3610F9482A32 /* libPods-FlirckSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,8 @@
 				277F3A751B0097EC00D09444 /* FlirckSample */,
 				277F3A8F1B0097EC00D09444 /* FlirckSampleTests */,
 				277F3A741B0097EC00D09444 /* Products */,
+				5E038CD6E373EA1673F378FE /* Pods */,
+				F95CE45955CDF4054C06C4EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +91,12 @@
 		277F3A751B0097EC00D09444 /* FlirckSample */ = {
 			isa = PBXGroup;
 			children = (
+				277F3A9E1B00C5CD00D09444 /* Controller */,
+				277F3A9D1B00C5AF00D09444 /* View */,
+				277F3A9C1B00C5A800D09444 /* Model */,
 				277F3A7A1B0097EC00D09444 /* AppDelegate.h */,
 				277F3A7B1B0097EC00D09444 /* AppDelegate.m */,
-				277F3A7D1B0097EC00D09444 /* ViewController.h */,
-				277F3A7E1B0097EC00D09444 /* ViewController.m */,
-				277F3A801B0097EC00D09444 /* Main.storyboard */,
 				277F3A831B0097EC00D09444 /* Images.xcassets */,
-				277F3A851B0097EC00D09444 /* LaunchScreen.xib */,
 				277F3A761B0097EC00D09444 /* Supporting Files */,
 			);
 			path = FlirckSample;
@@ -119,6 +128,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		277F3A9C1B00C5A800D09444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		277F3A9D1B00C5AF00D09444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				277F3A801B0097EC00D09444 /* Main.storyboard */,
+				277F3A851B0097EC00D09444 /* LaunchScreen.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		277F3A9E1B00C5CD00D09444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				277F3A7D1B0097EC00D09444 /* ViewController.h */,
+				277F3A7E1B0097EC00D09444 /* ViewController.m */,
+				277F3AA41B00D25100D09444 /* FlickrServicesController.h */,
+				277F3AA51B00D25100D09444 /* FlickrServicesController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E038CD6E373EA1673F378FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB919EF59E2C6EC7FF9D9C6F /* Pods-FlirckSample.debug.xcconfig */,
+				15F5559A376F730857E27011 /* Pods-FlirckSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F95CE45955CDF4054C06C4EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E57664749134443570A537 /* libPods-FlirckSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277F3A961B0097EC00D09444 /* Build configuration list for PBXNativeTarget "FlirckSample" */;
 			buildPhases = (
+				A50BB4602EDDF88FB092D31C /* Check Pods Manifest.lock */,
 				277F3A6F1B0097EC00D09444 /* Sources */,
 				277F3A701B0097EC00D09444 /* Frameworks */,
 				277F3A711B0097EC00D09444 /* Resources */,
+				01EDA9AF3831DDBABB3F5CBD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,11 +269,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01EDA9AF3831DDBABB3F5CBD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlirckSample/Pods-FlirckSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A50BB4602EDDF88FB092D31C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		277F3A6F1B0097EC00D09444 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277F3AA61B00D25100D09444 /* FlickrServicesController.m in Sources */,
 				277F3A7F1B0097EC00D09444 /* ViewController.m in Sources */,
 				277F3A7C1B0097EC00D09444 /* AppDelegate.m in Sources */,
 				277F3A791B0097EC00D09444 /* main.m in Sources */,
@@ -250,6 +339,7 @@
 				277F3A811B0097EC00D09444 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		277F3A851B0097EC00D09444 /* LaunchScreen.xib */ = {
@@ -258,6 +348,7 @@
 				277F3A861B0097EC00D09444 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -345,6 +436,7 @@
 		};
 		277F3A971B0097EC00D09444 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB919EF59E2C6EC7FF9D9C6F /* Pods-FlirckSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlirckSample/Info.plist;
@@ -355,6 +447,7 @@
 		};
 		277F3A981B0097EC00D09444 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F5559A376F730857E27011 /* Pods-FlirckSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlirckSample/Info.plist;
@@ -416,6 +509,7 @@
 				277F3A981B0097EC00D09444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277F3A991B0097EC00D09444 /* Build configuration list for PBXNativeTarget "FlirckSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +518,7 @@
 				277F3A9B1B0097EC00D09444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

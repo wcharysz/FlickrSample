@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FlickrServicesController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *flickrKey = @"129d4e839ed824715e9fd040c8687e14";
+    NSString *flickrSecret = @"035971ab3fa14d0d";
+    
+    [[FlickrServicesController instance] initializeWithAPIKey:flickrKey andSharedSecret:flickrSecret];
+    
     return YES;
 }
 

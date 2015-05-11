@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FlickrServicesController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[FlickrServicesController instance] requestTokenWithCompletion:^(NSString *token, NSString *tokenSecret) {
+        
+        NSLog(@"token: %@",token);
+        NSLog(@"tokenSecret: %@",tokenSecret);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

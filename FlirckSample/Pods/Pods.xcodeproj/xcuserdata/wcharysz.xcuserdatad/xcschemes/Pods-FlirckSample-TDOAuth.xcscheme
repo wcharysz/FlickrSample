@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "277F3A721B0097EC00D09444"
-               BuildableName = "FlirckSample.app"
-               BlueprintName = "FlirckSample"
-               ReferencedContainer = "container:FlirckSample.xcodeproj">
+               BlueprintIdentifier = "0F416991542CB04764793C8B"
+               BuildableName = "libPods-FlirckSample-TDOAuth.a"
+               BlueprintName = "Pods-FlirckSample-TDOAuth"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "277F3A721B0097EC00D09444"
-            BuildableName = "FlirckSample.app"
-            BlueprintName = "FlirckSample"
-            ReferencedContainer = "container:FlirckSample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -48,16 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "277F3A721B0097EC00D09444"
-            BuildableName = "FlirckSample.app"
-            BlueprintName = "FlirckSample"
-            ReferencedContainer = "container:FlirckSample.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -67,16 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "277F3A721B0097EC00D09444"
-            BuildableName = "FlirckSample.app"
-            BlueprintName = "FlirckSample"
-            ReferencedContainer = "container:FlirckSample.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
