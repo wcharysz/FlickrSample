@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2771A49F1B01DE32006755F7 /* FlickrAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2771A49E1B01DE32006755F7 /* FlickrAuthViewController.m */; };
 		277F3A791B0097EC00D09444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 277F3A781B0097EC00D09444 /* main.m */; };
 		277F3A7C1B0097EC00D09444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 277F3A7B1B0097EC00D09444 /* AppDelegate.m */; };
 		277F3A7F1B0097EC00D09444 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277F3A7E1B0097EC00D09444 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		15F5559A376F730857E27011 /* Pods-FlirckSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlirckSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlirckSample/Pods-FlirckSample.release.xcconfig"; sourceTree = "<group>"; };
+		2771A49D1B01DE32006755F7 /* FlickrAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAuthViewController.h; sourceTree = "<group>"; };
+		2771A49E1B01DE32006755F7 /* FlickrAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrAuthViewController.m; sourceTree = "<group>"; };
 		277F3A731B0097EC00D09444 /* FlirckSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlirckSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F3A771B0097EC00D09444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F3A781B0097EC00D09444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				277F3A7E1B0097EC00D09444 /* ViewController.m */,
 				277F3AA41B00D25100D09444 /* FlickrServicesController.h */,
 				277F3AA51B00D25100D09444 /* FlickrServicesController.m */,
+				2771A49D1B01DE32006755F7 /* FlickrAuthViewController.h */,
+				2771A49E1B01DE32006755F7 /* FlickrAuthViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				277F3A7F1B0097EC00D09444 /* ViewController.m in Sources */,
 				277F3A7C1B0097EC00D09444 /* AppDelegate.m in Sources */,
 				277F3A791B0097EC00D09444 /* main.m in Sources */,
+				2771A49F1B01DE32006755F7 /* FlickrAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

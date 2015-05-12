@@ -6,19 +6,22 @@
 //  Copyright (c) 2015 Wojciech Charysz. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import UIKit;
 
-typedef void (^RequestToken) (NSString *token, NSString *tokenSecret);
+typedef void (^RequestToken) (NSURLRequest *authorizationRequest);
 
-@interface FlickrServicesController : NSObject {
+@interface FlickrServicesController : NSObject <UIWebViewDelegate> {
     NSString *apiKey;
     NSString *sharedSecretKey;
-    NSString *callBackURL;
 }
+
+@property(nonatomic, strong) NSString *callBackURLString;
 
 + (instancetype)instance;
 
 - (BOOL)initializeWithAPIKey:(NSString *)apiKey andSharedSecret:(NSString *)sharedSecret;
 - (void)requestTokenWithCompletion:(RequestToken)completion;
+- (NSURLRequest *)getRequestAuthorizeToken:(NSString *)token andSecret:(NSString *)tokenSecret;
 
 @end
