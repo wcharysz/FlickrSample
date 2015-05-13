@@ -23,6 +23,7 @@
         if (!_webView)
         {
             _webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+            _webView.delegate = self;
             [self.view addSubview:_webView];
         } else {
             _webView.frame = self.view.frame;
@@ -45,13 +46,16 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     
-    NSString *callBackString = [FlickrServicesController instance].callBackURLString;
-    
-    NSRange range = [webView.request.URL.absoluteString rangeOfString:callBackString];
+    NSRange range = [webView.request.URL.absoluteString rangeOfString:@"oauth_verifier"];
     if (range.location != NSNotFound) {
         //[self.navigationController popViewControllerAnimated:YES];
+        
+        //oautch_verifier has 16 characters
+        NSString *oauth_verifier = [webView.request.URL.absoluteString substringFromIndex:webView.request.URL.absoluteString.length - 16];
+        NSLog(@"oauth_verifier: %@",oauth_verifier);
+        
         [self dismissViewControllerAnimated:YES completion:^{
-            
+            [[FlickrServicesController instance] getAccessTokenForRequestToken:oauth_verifier];
         }];
     }
 }

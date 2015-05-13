@@ -27,7 +27,7 @@
             FlickrAuthViewController *authViewController = [[FlickrAuthViewController alloc] init];
             authViewController.view.frame = self.view.frame;
             
-            authViewController.webView.delegate = [FlickrServicesController instance];
+            //authViewController.webView.delegate = [FlickrServicesController instance];
             
             [self presentViewController:authViewController animated:YES completion:^{
                 [authViewController.webView loadRequest:authorizationRequest];

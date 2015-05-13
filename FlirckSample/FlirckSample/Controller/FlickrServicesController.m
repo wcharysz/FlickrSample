@@ -60,7 +60,7 @@
         if (!connectionError && data)
         {
             NSString *stringResponse = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"stringResponse %@",stringResponse);
+            NSLog(@"A stringResponse %@",stringResponse);
             
             NSMutableDictionary *params = [NSMutableDictionary dictionary];
             NSArray *split = [stringResponse componentsSeparatedByString:@"&"];
@@ -74,15 +74,13 @@
             }
             
             NSString *token = params[@"oauth_token"];
-            NSString *tokenSecret = params[@"oauth_token_secret"];
+            tokenSecret = params[@"oauth_token_secret"];
             
             NSString *stringAuthForURL = [NSString stringWithFormat:@"https://www.flickr.com/services/oauth/authorize?oauth_token=%@&oauth_callback=%@",token,_callBackURLString];
             
             NSURL *url = [NSURL URLWithString:stringAuthForURL];
             NSURLRequest *authRequest = [[NSURLRequest alloc] initWithURL:url];
-            
-            //NSURLRequest *authRequest = [self getRequestAuthorizeToken:token andSecret:tokenSecret];
-        
+                    
             NSLog(@"authRequest url %@",authRequest.URL);
             
             completion(authRequest); 
@@ -95,30 +93,34 @@
     }];
 }
 
-- (NSURLRequest *)getRequestAuthorizeToken:(NSString *)token andSecret:(NSString *)tokenSecret {
+- (void)getAccessTokenForRequestToken:(NSString *)requestToken {
     
-    
-    //withings additional params
     NSDictionary *dict = @{@"oauth_callback": _callBackURLString};
     
     //init request
-    NSLog(@"getRequestAuthorizeToken oauth_token: %@",token);
-    NSLog(@"getRequestAuthorizeToken oauth_token_secret: %@",tokenSecret);
+    NSURLRequest *rq = [TDOAuth URLRequestForPath:@"/access_token" GETParameters:dict scheme:@"https" host:@"www.flickr.com/services/oauth" consumerKey:apiKey consumerSecret:sharedSecretKey accessToken:requestToken tokenSecret:tokenSecret];
     
-    
-    NSURLRequest *request = [TDOAuth URLRequestForPath:@"/authorize" GETParameters:dict scheme:@"https" host:@"www.flickr.com/services/oauth" consumerKey:apiKey consumerSecret:sharedSecretKey accessToken:token tokenSecret:tokenSecret];
-    return request;
-    
-    /*
-    webView.delegate = self;
-    [DBLoaderHUD showDBLoaderInView:webView];
-    [webView loadRequest:rq2];
-     */
+    [NSURLConnection sendAsynchronousRequest:rq queue:[NSOperationQueue new] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        NSString *stringResponse = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"B stringResponse %@",stringResponse);
+        
+        if (!connectionError && data)
+        {
+            NSString *stringResponse = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"C stringResponse %@",stringResponse);
+        }
+    }];
 }
+
 
 #pragma mark UIWebViewDelegate
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+    
+   
+    
     
 }
 

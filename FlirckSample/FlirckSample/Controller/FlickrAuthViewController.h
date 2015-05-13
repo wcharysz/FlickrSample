@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface FlickrAuthViewController : UIViewController {
+@interface FlickrAuthViewController : UIViewController <UIWebViewDelegate> {
     
 }
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F416991542CB04764793C8B"
+               BlueprintIdentifier = "B65C341C2AA4AB8756944048"
                BuildableName = "libPods-FlirckSample-TDOAuth.a"
                BlueprintName = "Pods-FlirckSample-TDOAuth"
                ReferencedContainer = "container:Pods.xcodeproj">

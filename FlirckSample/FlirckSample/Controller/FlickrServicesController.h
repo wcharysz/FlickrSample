@@ -14,6 +14,7 @@ typedef void (^RequestToken) (NSURLRequest *authorizationRequest);
 @interface FlickrServicesController : NSObject <UIWebViewDelegate> {
     NSString *apiKey;
     NSString *sharedSecretKey;
+    NSString *tokenSecret;
 }
 
 @property(nonatomic, strong) NSString *callBackURLString;
@@ -22,6 +23,6 @@ typedef void (^RequestToken) (NSURLRequest *authorizationRequest);
 
 - (BOOL)initializeWithAPIKey:(NSString *)apiKey andSharedSecret:(NSString *)sharedSecret;
 - (void)requestTokenWithCompletion:(RequestToken)completion;
-- (NSURLRequest *)getRequestAuthorizeToken:(NSString *)token andSecret:(NSString *)tokenSecret;
+- (void)getAccessTokenForRequestToken:(NSString *)requestToken;
 
 @end
